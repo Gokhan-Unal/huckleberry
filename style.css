@@ -9,4 +9,38 @@ body {
   padding: 0;
 }
 
+:root {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 /* Add styles here! */
+
+html {
+  font-size: 18px;
+}
+
+.max-width-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  padding-top: 96px;
+}
+
+.intro-chunk .title {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+main {
+  background: hsl(0deg, 0%, 60%);
+}
