@@ -8,39 +8,69 @@ body {
   margin: 0;
   padding: 0;
 }
-
-:root {
-}
-
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   margin: 0;
 }
 
 /* Add styles here! */
 
-html {
-  font-size: 18px;
+/* set the wrapper(parent) whatever size you want  */
+.max-width-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-.max-width-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
+header,
+.card {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 }
 
 .intro-chunk {
-  padding-top: 96px;
+  max-width: 400px;
+  padding: 96px 0;
 }
 
 .intro-chunk .title {
   font-size: 2rem;
-  margin-bottom: 32px;
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+}
+
+.intro-chunk strong {
+  color: hsl(160deg, 100%, 30%);
 }
 
 main {
-  background: hsl(0deg, 0%, 60%);
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 96px 0;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 24px;
+  margin: -24px; /*eat from parent*/
+}
+
+.card p {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  width: fit-content;
+  padding: 16px;
+  margin-left: -32px;
+  margin-top: -16px; /* 24-16=8px  card 24px we want 8px */
+  padding-left: 32px; /* bc we pulled 32px we need to push 32px from left*/
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
